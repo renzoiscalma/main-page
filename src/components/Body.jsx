@@ -8,46 +8,67 @@ const gridData = [{}];
 const Body = () => {
 	return (
 		<>
-			<Grid container spacing={2}>
+			<Grid container spacing={6} 
+				justifyContent="center" 
+				sx={{
+					maxWidth: "1000px",
+					margin: "0 auto"
+				}}
+				>
 				{/* <Headline></Headline> */}
 				{/* { Array.map(() => (<Grid> </Grid>))} */}
-				<Grid item xs={6}>
-						<Typography>
-							Easier for you
-						</Typography>
-						<Typography>
-							Spend less than 5 seconds sending your next invoice
-						</Typography>
-						<Typography>
-							Spend more time doing the work you want to be doing. 
-							TwoCards meets the needs of freelancers, 
-							making invoicing swift, simple and secure.
-						</Typography>
+				<Grid item xs={6} 
+					sx={{
+						marginBottom: "124px",
+						margin: "auto 0"
+					}}>
+					<Typography align="left">
+						Easier for you
+					</Typography>
+					<Typography variant="h4" align="left">
+						Spend less than 5 seconds sending your next invoice
+					</Typography>
+					<Typography variant="subtitle2" align="left">
+						Spend more time doing the work you want to be doing. 
+						TwoCards meets the needs of freelancers, 
+						making invoicing swift, simple and secure.
+					</Typography>
+				</Grid>
+				<Grid item xs={6} sx={{
+					marginBottom: "124px"
+				}}>
+					<img
+						src={image1}
+						sx={{
+							maxWidth: "100%"
+						}}
+					/>
 				</Grid>
 				<Grid item xs={6}>
 						<img
-							src={image1}
-							height={480}
+							src={image2}
+							sx={{
+								maxWidth: "100%"
+							}}
 						/>
 				</Grid>
-				<Grid item xs={6}>
-						<img
-							src={image2+"?w=480&h=480"}
-							height={480}
-						/>
-				</Grid>
-				<Grid item xs={6}>
-						<Typography>
-							Easier for you
-						</Typography>
-						<Typography>
-							Spend less than 5 seconds sending your next invoice
-						</Typography>
-						<Typography>
-							Spend more time doing the work you want to be doing. 
-							TwoCards meets the needs of freelancers, 
-							making invoicing swift, simple and secure.
-						</Typography>
+				<Grid 
+					item xs={6}
+					sx={{
+						marginBottom: "124px",
+						margin: "auto 0"
+					}}>
+					<Typography align="left">
+						Easier for you
+					</Typography>
+					<Typography variant="h4" align="left">
+						Spend less than 5 seconds sending your next invoice
+					</Typography>
+					<Typography variant="subtitle2" align="left">
+						Spend more time doing the work you want to be doing. 
+						TwoCards meets the needs of freelancers, 
+						making invoicing swift, simple and secure.
+					</Typography>
 				</Grid>
 			</Grid>
 		</>
