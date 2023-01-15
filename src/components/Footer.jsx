@@ -7,19 +7,15 @@ const footerData = [
     items: ["Pricing", "Terms", "Privacy", "Contact"],
   },
   {
-    heading: "About",
-    items: ["Pricing", "Terms", "Privacy", "Contact"],
+    heading: "Resources",
+    items: ["Press"],
   },
   {
-    heading: "About",
-    items: ["Pricing", "Terms", "Privacy", "Contact"],
-  },
-  {
-    heading: "About",
-    items: ["Pricing", "Terms", "Privacy", "Contact"],
+    heading: "Social",
+    items: ["Twitter", "Instagram", "Facebook"],
   },
 ];
-const footerRegistration = "MainPage Ltd. • Registered in Canada";
+const footerRegistration = "MainPage Ltd. • Registered";
 
 const Footer = () => {
   return (
@@ -34,7 +30,7 @@ const Footer = () => {
         }}
       >
         {footerData.map((data) => (
-          <Grid item xs={3} align="left">
+          <Grid item xs={4} align="left">
             <Typography variant="h6">{data.heading}</Typography>
             {data.items.map((item) => (
               <Typography variant="body2">{item}</Typography>
