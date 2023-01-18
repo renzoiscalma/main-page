@@ -5,6 +5,8 @@ import Feature from "./Features/Feature";
 import MediumInfo from "./Features/MediumInfo";
 import Reviews from "./Reviews";
 import PaymentInfo from "./Features/PaymentInfo";
+import Headline from "./Headline";
+import PricingBanner from "./PricingBanner";
 
 const Body = () => {
   return (
@@ -18,6 +20,7 @@ const Body = () => {
           margin: "0 auto",
         }}
       >
+        <Headline />
         <Feature {...featureData[0]}></Feature>
         <Feature {...featureData[1]}>
           <MediumInfo {...featureData[1].subComponentProps}></MediumInfo>
@@ -26,14 +29,15 @@ const Body = () => {
           <PaymentInfo {...featureData[2].subComponentProps}></PaymentInfo>
         </Feature>
 
-        {reviewData.map((val) => {
+        {reviewData.map((val, index) => {
           return (
-            <Grid item xs={6}>
+            <Grid item xs={6} id={index}>
               <Reviews {...val}></Reviews>
             </Grid>
           );
         })}
       </Grid>
+      <PricingBanner></PricingBanner>
     </>
   );
 };

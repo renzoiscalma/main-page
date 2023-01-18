@@ -2,7 +2,7 @@ import { image1, image2, image3, mediumImg, payment } from "../utils/image";
 
 const reviewData = [
   {
-    comment: `Are you looking for a simple invoicing solution? Try @twocardsco today and you won't 
+    comment: `Are you looking for a simple invoicing solution? Try @MainPageco today and you won't 
 			be disappointed! Really nice UI. Great job 🤗`,
     name: "John Doe",
     position: "Full Stack Developer",
@@ -10,7 +10,7 @@ const reviewData = [
   },
   {
     comment:
-      "Try @twocardsco today and you won't be disappointed! Really nice UI. Great job 🤗",
+      "Try @MainPageco today and you won't be disappointed! Really nice UI. Great job 🤗",
     name: "Johnny Doland",
     position: "Lead Developer",
     image: "review1.jpg",
@@ -23,7 +23,7 @@ const featureData = [
     text: {
       subtitle: "Easier for you.",
       heading: `Spend less than 5 seconds sending your next invoice`,
-      description: `Spend more time doing the work you want to be doing. TwoCards meets
+      description: `Spend more time doing the work you want to be doing. MainPage meets
 			the needs of freelancers, making invoicing swift, simple and secure.`,
     },
     flipped: false,
@@ -33,7 +33,7 @@ const featureData = [
     text: {
       subtitle: "Easier for you.",
       heading: `Spend less than 5 seconds sending your next invoice`,
-      description: `Spend more time doing the work you want to be doing. TwoCards meets
+      description: `Spend more time doing the work you want to be doing. MainPage meets
 			the needs of freelancers, making invoicing swift, simple and secure.`,
     },
     flipped: true,
@@ -48,7 +48,7 @@ const featureData = [
     text: {
       subtitle: "Easier for you.",
       heading: `Spend less than 5 seconds sending your next invoice`,
-      description: `Spend more time doing the work you want to be doing. TwoCards meets
+      description: `Spend more time doing the work you want to be doing. MainPage meets
 			the needs of freelancers, making invoicing swift, simple and secure.`,
     },
     flipped: false,
