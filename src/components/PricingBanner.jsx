@@ -57,9 +57,13 @@ const PricingBanner = ({ pricingBannerData }) => {
               {data2.currency}
               {data2.price}
             </Typography>
-            <Typography sx={pMonth}>{data2.frequency}</Typography>
+            <Typography variant="subtitle1" sx={pMonth}>
+              {data2.frequency}
+            </Typography>
           </Box>
-          <Typography sx={priceDesciption}>{data2.description}</Typography>
+          <Typography variant="subtitle1" sx={priceDesciption}>
+            {data2.description}
+          </Typography>
           <Button variant="contained" sx={buttonSx} size="large">
             {data2.buttonText}
           </Button>

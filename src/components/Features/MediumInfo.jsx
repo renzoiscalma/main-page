@@ -27,7 +27,7 @@ const MediumInfo = ({ text, linkText, imgsrc }) => {
         <Box component="img" src={imgsrc} sx={iconSx} />
       </Box>
       <Box sx={textContainerSx}>
-        <Typography>{text}</Typography>
+        <Typography variant="h5">{text}</Typography>
         <Link href="/" underline="hover">
           {linkText}
         </Link>
