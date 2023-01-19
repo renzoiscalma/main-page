@@ -22,22 +22,19 @@ const buttonSx = {
   margin: "24px auto",
   textTransform: "none",
 };
-const Headline = () => {
+const Headline = ({ head1, head2, head3, buttonText }) => {
   return (
     <>
       <Grid item xs={12} sx={containerSx} alignItems="center">
         <Typography variant="h2" sx={headerSx}>
-          Super Fast Professional Invoicing for Freelancers
+          {head1}
         </Typography>
         <Typography variant="subtitle1" sx={subSx1}>
-          MainPage helps you send your invoices as quickly as possible, getting
-          you paid faster.
+          {head2}
         </Typography>
-        <Typography variant="subtitle2">
-          Try out our services for free for the first purchase!
-        </Typography>
+        <Typography variant="subtitle2">{head3}</Typography>
         <Button variant="contained" sx={buttonSx} size="large">
-          Get started for free
+          {buttonText}
         </Button>
       </Grid>
     </>

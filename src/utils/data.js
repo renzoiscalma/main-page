@@ -60,4 +60,30 @@ const featureData = [
   },
 ];
 
-export { reviewData, featureData };
+const headlineData = {
+  head1: "Super Fast Professional Invoicing for Freelancers",
+  head2: `MainPage helps you send your invoices as quickly as possible, getting
+  you paid faster.`,
+  head3: `Try out our services for free for the first purchase!`,
+  buttonText: `Get started for free`,
+};
+
+const pricingBannerData = [
+  {
+    heading: `Affordable pricing for everone.`,
+    description: `Very simple pricing, one plan for a monthly fee. Unlimited
+    everything, go wild, invoice to your hearts content.`,
+    checkText1: "Free for 30 days",
+    checkText2: "No credit card required!",
+  },
+  {
+    currency: "$",
+    price: "12",
+    frequency: "per month",
+    description: `Completely free for 30 days, unlimited everything so you can truely
+    work out if MainPage is right for you.`,
+    buttonText: "Start your 30 day free trial!",
+  },
+];
+
+export { headlineData, reviewData, featureData, pricingBannerData };
