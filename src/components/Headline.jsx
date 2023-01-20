@@ -2,21 +2,29 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-const containerSx = {};
+const containerSx = {
+  display: "flex",
+  flexDirection: "column",
+  textAlign: "center",
+};
 
 const headerSx = {
   maxWidth: "680px",
-  margin: "112px auto",
+  margin: "112px 0",
   marginBottom: "12px",
+  fontSize: {
+    xs: "2em",
+    md: "3.75em",
+  },
 };
 
 const subSx1 = {
   maxWidth: "480px",
   marginBottom: "0px",
-  margin: "12px auto",
+  margin: "12px 0",
 };
 const buttonSx = {
-  margin: "24px auto",
+  margin: "24px 0",
   textTransform: "none",
   backgroundColor: "#532ee7",
   "&:hover": {

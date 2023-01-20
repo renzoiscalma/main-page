@@ -49,6 +49,7 @@ const Footer = () => {
     <>
       <Grid
         container
+        columns={{ xs: 3, md: 12 }}
         spacing={6}
         justifyContent="center"
         sx={{
@@ -56,9 +57,13 @@ const Footer = () => {
           margin: "24px auto",
         }}
       >
-        <Grid container columns={10} justifyContent="normal">
+        <Grid
+          container
+          columns={{ xs: 2, md: 10 }}
+          justifyContent={{ xs: "center", md: "normal" }}
+        >
           {extraFeatures.map((feature) => (
-            <Grid sx={extraFeaturesSx} xs={2}>
+            <Grid item sx={extraFeaturesSx} xs={1} md={2}>
               <Typography sx={extraFeatureTypoSx} variant="subtitle2">
                 {feature}
               </Typography>

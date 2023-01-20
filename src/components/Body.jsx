@@ -18,6 +18,7 @@ const Body = () => {
     <>
       <Grid
         container
+        columns={{ xs: 6, md: 12, lg: 12 }}
         spacing={6}
         justifyContent="center"
         sx={{

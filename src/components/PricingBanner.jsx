@@ -48,7 +48,7 @@ const PricingBanner = ({ pricingBannerData }) => {
   return (
     <Box sx={containerSx}>
       <Grid container sx={gridContainer} spacing={6}>
-        <Grid item xs={7} sx={descriptionSx}>
+        <Grid item xs={12} md={7} sx={descriptionSx}>
           <Typography variant="h3">{data1.heading}</Typography>
           <Typography variant="subtitle1">{data1.description}</Typography>
           <Box sx={checkContainer}>
@@ -56,7 +56,7 @@ const PricingBanner = ({ pricingBannerData }) => {
             <Typography variant="subtitle1">{data1.checkText2}</Typography>
           </Box>
         </Grid>
-        <Grid item xs={5} sx={pricingBoxSx}>
+        <Grid item xs={12} md={5} sx={pricingBoxSx}>
           <Box sx={priceContainer}>
             <Typography variant="h3">
               {data2.currency}
