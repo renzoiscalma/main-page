@@ -6,7 +6,7 @@ const containerSx = {};
 
 const headerSx = {
   maxWidth: "680px",
-  margin: "48px auto",
+  margin: "112px auto",
   marginBottom: "12px",
 };
 
@@ -15,12 +15,13 @@ const subSx1 = {
   marginBottom: "0px",
   margin: "12px auto",
 };
-
-const subSx2 = {};
-
 const buttonSx = {
   margin: "24px auto",
   textTransform: "none",
+  backgroundColor: "#532ee7",
+  "&:hover": {
+    backgroundColor: "#532ee7",
+  },
 };
 const Headline = ({ head1, head2, head3, buttonText }) => {
   return (

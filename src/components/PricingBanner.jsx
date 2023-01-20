@@ -30,7 +30,12 @@ const priceContainer = {};
 
 const pMonth = {};
 
-const buttonSx = {};
+const buttonSx = {
+  backgroundColor: "#1abd7d",
+  "&:hover": {
+    backgroundColor: "#1abd7d",
+  },
+};
 
 const priceDesciption = {
   borderTop: "1px solid hsla(0,0%,100%,.2)",
