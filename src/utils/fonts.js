@@ -16,13 +16,20 @@ const fonts = createTheme({
       fontFamily: "AdobeCleanBold, Roboto",
       fontSize: "1.25rem",
     },
+    h6: {
+      fontFamily: "AdobeCleanBold, Roboto",
+    },
     subtitle1: {
       fontFamily: "SofiaProRegular, Arial",
     },
     subtitle2: {
       fontFamily: "SofiaProRegular, Arial",
+      fontSize: "1rem",
     },
     button: {
+      fontFamily: "SofiaProRegular, Arial",
+    },
+    body2: {
       fontFamily: "SofiaProRegular, Arial",
     },
   },

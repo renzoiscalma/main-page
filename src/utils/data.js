@@ -1,19 +1,27 @@
-import { image1, image2, image3, mediumImg, payment } from "../utils/image";
+import {
+  image1,
+  image2,
+  image3,
+  mediumImg,
+  payment,
+  reviewer1,
+  reviewer2,
+} from "../utils/image";
 
 const reviewData = [
   {
-    comment: `Are you looking for a simple invoicing solution? Try @MainPageco today and you won't 
+    comment: `Are you looking for a simple invoicing solution? Try MainPage today and you won't 
 			be disappointed! Really nice UI. Great job 🤗`,
     name: "John Doe",
-    position: "Full Stack Developer",
-    image: "review1.jpg",
+    position: "Previous Client",
+    image: reviewer1,
   },
   {
     comment:
-      "Try @MainPageco today and you won't be disappointed! Really nice UI. Great job 🤗",
+      "Great product, great support, very reactive. A real pleasure to use it, smooth and well designed.",
     name: "Johnny Doland",
-    position: "Lead Developer",
-    image: "review1.jpg",
+    position: "Previous Client",
+    image: reviewer2,
   },
 ];
 

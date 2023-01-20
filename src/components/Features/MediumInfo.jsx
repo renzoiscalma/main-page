@@ -29,7 +29,7 @@ const MediumInfo = ({ text, linkText, imgsrc }) => {
       <Box sx={textContainerSx}>
         <Typography variant="h5">{text}</Typography>
         <Link href="/" underline="hover">
-          {linkText}
+          <Typography variant="subtitle1">{linkText}</Typography>
         </Link>
       </Box>
     </Box>
