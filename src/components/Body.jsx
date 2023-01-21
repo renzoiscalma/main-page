@@ -1,6 +1,11 @@
 import Grid from "@mui/material/Grid";
 import React from "react";
-import { featureData, reviewData } from "../utils/data";
+import {
+  headlineData,
+  featureData,
+  reviewData,
+  pricingBannerData,
+} from "../utils/data";
 import Feature from "./Features/Feature";
 import MediumInfo from "./Features/MediumInfo";
 import Reviews from "./Reviews";
@@ -13,14 +18,16 @@ const Body = () => {
     <>
       <Grid
         container
+        columns={{ xs: 6, md: 12, lg: 12 }}
         spacing={6}
         justifyContent="center"
         sx={{
           maxWidth: "1200px",
           margin: "0 auto",
+          width: "100%",
         }}
       >
-        <Headline />
+        <Headline {...headlineData} />
         <Feature {...featureData[0]}></Feature>
         <Feature {...featureData[1]}>
           <MediumInfo {...featureData[1].subComponentProps}></MediumInfo>
@@ -31,13 +38,13 @@ const Body = () => {
 
         {reviewData.map((val, index) => {
           return (
-            <Grid item xs={6} id={index}>
+            <Grid item xs={6} key={index}>
               <Reviews {...val}></Reviews>
             </Grid>
           );
         })}
       </Grid>
-      <PricingBanner></PricingBanner>
+      <PricingBanner pricingBannerData={pricingBannerData}></PricingBanner>
     </>
   );
 };

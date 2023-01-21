@@ -25,7 +25,9 @@ const PaymentInfo = ({ text, linkText, imgsrc }) => {
       <Typography variant="subtitle2">{text}</Typography>
       <Box component="img" sx={imageSx} src={imgsrc} />
       <Box sx={linkContainerSx}>
-        <Link href="/">{linkText}</Link>
+        <Link href="/">
+          <Typography variant="subtitle1">{linkText}</Typography>
+        </Link>
       </Box>
     </Box>
   );

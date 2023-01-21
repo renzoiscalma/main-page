@@ -9,11 +9,31 @@ const containerSx = {
   textAlign: "left",
 };
 
+const hideXsSx = {
+  display: {
+    xs: "none",
+    md: "block",
+  },
+};
+
+const hideMdSx = {
+  display: {
+    xs: "block",
+    md: "none",
+  },
+};
+
 const Feature = ({ imagesrc, text, flipped, children }) => {
   if (flipped) {
     return (
       <>
-        <Grid item xs={6} sx={containerSx}>
+        <Grid
+          item
+          xs={6}
+          sx={{
+            ...containerSx,
+          }}
+        >
           <Image imagesrc={imagesrc} />
         </Grid>
         <Grid item xs={6} sx={containerSx}>
@@ -25,11 +45,28 @@ const Feature = ({ imagesrc, text, flipped, children }) => {
   }
   return (
     <>
+      <Grid
+        item
+        xs={6}
+        sx={{
+          ...containerSx,
+          ...hideMdSx,
+        }}
+      >
+        <Image imagesrc={imagesrc} />
+      </Grid>
       <Grid item xs={6} sx={containerSx}>
         <FeatureText {...text} />
         <div>{children}</div>
       </Grid>
-      <Grid item xs={6} sx={containerSx}>
+      <Grid
+        item
+        xs={6}
+        sx={{
+          ...containerSx,
+          ...hideXsSx,
+        }}
+      >
         <Image imagesrc={imagesrc} />
       </Grid>
     </>

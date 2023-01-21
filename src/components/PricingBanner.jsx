@@ -18,9 +18,15 @@ const gridContainer = {
   color: "white",
 };
 
-const descriptionSx = {};
+const descriptionSx = {
+  paddingLeft: 0,
+  paddingRight: 0,
+};
 
-const pricingBoxSx = {};
+const pricingBoxSx = {
+  paddingLeft: 0,
+  paddingRight: 0,
+};
 
 const checkContainer = {
   marginTop: "10px",
@@ -30,41 +36,46 @@ const priceContainer = {};
 
 const pMonth = {};
 
-const buttonSx = {};
+const buttonSx = {
+  backgroundColor: "#1abd7d",
+  "&:hover": {
+    backgroundColor: "#1abd7d",
+  },
+};
 
 const priceDesciption = {
   borderTop: "1px solid hsla(0,0%,100%,.2)",
   marginTop: "24px",
   marginBottom: "12px",
 };
-const PricingBanner = () => {
+const PricingBanner = ({ pricingBannerData }) => {
+  const [data1, data2] = pricingBannerData;
   return (
     <Box sx={containerSx}>
       <Grid container sx={gridContainer} spacing={6}>
-        <Grid item xs={7} sx={descriptionSx}>
-          <Typography variant="h3">Affordable pricing for everyone.</Typography>
-          <Typography variant="subtitle1">
-            Very simple pricing, one plan for a monthly fee. Unlimited
-            everything, go wild, invoice to your hearts content.
-          </Typography>
+        <Grid item xs={12} md={7} sx={descriptionSx}>
+          <Typography variant="h3">{data1.heading}</Typography>
+          <Typography variant="subtitle1">{data1.description}</Typography>
           <Box sx={checkContainer}>
-            <Typography variant="subtitle1">Free for 30 days</Typography>
-            <Typography variant="subtitle1">
-              No credit card required!
-            </Typography>
+            <Typography variant="subtitle1">{data1.checkText1}</Typography>
+            <Typography variant="subtitle1">{data1.checkText2}</Typography>
           </Box>
         </Grid>
-        <Grid item xs={5} sx={pricingBoxSx}>
+        <Grid item xs={12} md={5} sx={pricingBoxSx}>
           <Box sx={priceContainer}>
-            <Typography variant="h3">$12</Typography>
-            <Typography sx={pMonth}>per month</Typography>
+            <Typography variant="h3">
+              {data2.currency}
+              {data2.price}
+            </Typography>
+            <Typography variant="subtitle1" sx={pMonth}>
+              {data2.frequency}
+            </Typography>
           </Box>
-          <Typography sx={priceDesciption}>
-            Completely free for 30 days, unlimited everything so you can truely
-            work out if MainPage is right for you.
+          <Typography variant="subtitle1" sx={priceDesciption}>
+            {data2.description}
           </Typography>
           <Button variant="contained" sx={buttonSx} size="large">
-            Start your 30 day free trial!
+            {data2.buttonText}
           </Button>
         </Grid>
       </Grid>
