@@ -31,7 +31,7 @@ const logoTypoMdSx = {
 
 const logoXsSx = {
   mr: 1,
-  flex: 1,
+  flex: "0 0 auto",
   display: { xs: "flex", md: "none" },
 };
 
