@@ -11,15 +11,15 @@ const containerSx = {
 
 const hideXsSx = {
   display: {
-    xs: "block",
-    md: "none",
+    xs: "none",
+    md: "block",
   },
 };
 
 const hideMdSx = {
   display: {
-    xs: "none",
-    md: "block",
+    xs: "block",
+    md: "none",
   },
 };
 
@@ -32,7 +32,6 @@ const Feature = ({ imagesrc, text, flipped, children }) => {
           xs={6}
           sx={{
             ...containerSx,
-            ...hideXsSx,
           }}
         >
           <Image imagesrc={imagesrc} />
@@ -40,16 +39,6 @@ const Feature = ({ imagesrc, text, flipped, children }) => {
         <Grid item xs={6} sx={containerSx}>
           <FeatureText {...text} />
           <div>{children}</div>
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          sx={{
-            ...containerSx,
-            ...hideMdSx,
-          }}
-        >
-          <Image imagesrc={imagesrc} />
         </Grid>
       </>
     );
@@ -61,7 +50,7 @@ const Feature = ({ imagesrc, text, flipped, children }) => {
         xs={6}
         sx={{
           ...containerSx,
-          ...hideXsSx,
+          ...hideMdSx,
         }}
       >
         <Image imagesrc={imagesrc} />
@@ -75,7 +64,7 @@ const Feature = ({ imagesrc, text, flipped, children }) => {
         xs={6}
         sx={{
           ...containerSx,
-          ...hideMdSx,
+          ...hideXsSx,
         }}
       >
         <Image imagesrc={imagesrc} />
