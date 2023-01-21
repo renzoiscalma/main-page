@@ -24,6 +24,7 @@ const Body = () => {
         sx={{
           maxWidth: "1200px",
           margin: "0 auto",
+          width: "100%",
         }}
       >
         <Headline {...headlineData} />
@@ -37,7 +38,7 @@ const Body = () => {
 
         {reviewData.map((val, index) => {
           return (
-            <Grid item xs={6} id={index}>
+            <Grid item xs={6} key={index}>
               <Reviews {...val}></Reviews>
             </Grid>
           );

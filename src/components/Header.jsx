@@ -47,7 +47,8 @@ const buttonNavBarSx = {
 };
 
 const burgerSx = {
-  flexGrow: 0,
+  flex: 1,
+  flexDirection: "row-reverse",
   display: {
     xs: "flex",
     md: "none",
@@ -58,10 +59,14 @@ const toolbarSx = {
   backgroundColor: "#532ee7",
 };
 
+const noPadding = {
+  paddingLeft: "0 !important",
+  paddingRight: "0 !important",
+};
 const Header = () => {
   return (
     <AppBar position="fixed" sx={toolbarSx}>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={noPadding}>
         <Toolbar>
           <AdbIcon sx={logoMdSx} />
           <Typography

@@ -18,9 +18,15 @@ const gridContainer = {
   color: "white",
 };
 
-const descriptionSx = {};
+const descriptionSx = {
+  paddingLeft: 0,
+  paddingRight: 0,
+};
 
-const pricingBoxSx = {};
+const pricingBoxSx = {
+  paddingLeft: 0,
+  paddingRight: 0,
+};
 
 const checkContainer = {
   marginTop: "10px",
@@ -44,7 +50,6 @@ const priceDesciption = {
 };
 const PricingBanner = ({ pricingBannerData }) => {
   const [data1, data2] = pricingBannerData;
-  console.log(data1, data2);
   return (
     <Box sx={containerSx}>
       <Grid container sx={gridContainer} spacing={6}>

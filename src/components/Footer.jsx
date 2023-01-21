@@ -27,15 +27,19 @@ const extraFeatures = [
 
 const footerRegistration = "MainPage Ltd. • Registered";
 
+const extraFeatureContainerSx = {
+  margin: "0 auto",
+};
+
 const extraFeaturesSx = {
-  display: "inline-flex",
-  alignSelf: "center",
+  display: "flex",
+  justifyContent: "center",
   "&::before": {
     background: `url(${checklight}) no-repeat 50%`,
     content: "''",
     width: "20px",
     height: "20px",
-    marginRight: "10px",
+    marginRight: "2px",
     marginTop: "auto",
     marginBottom: "auto",
   },
@@ -46,6 +50,7 @@ const extraFeatureTypoSx = {
 };
 
 const footerContainer = {
+  width: "100%",
   maxWidth: "1000px",
   margin: "24px auto",
 };
@@ -70,9 +75,10 @@ const Footer = () => {
           container
           columns={{ xs: 2, md: 10 }}
           justifyContent={{ xs: "center", md: "normal" }}
+          sx={extraFeatureContainerSx}
         >
           {extraFeatures.map((feature) => (
-            <Grid item sx={extraFeaturesSx} xs={1} md={2}>
+            <Grid item sx={extraFeaturesSx} xs={1} md={2} key={feature}>
               <Typography sx={extraFeatureTypoSx} variant="subtitle2">
                 {feature}
               </Typography>
@@ -80,16 +86,16 @@ const Footer = () => {
           ))}
         </Grid>
         {footerData.map((data) => (
-          <Grid item xs={3} align="left" id={data.heading} sx={footerDataSx}>
+          <Grid item xs={3} align="left" key={data.heading} sx={footerDataSx}>
             <Typography variant="h6">{data.heading}</Typography>
             {data.items.map((item) => (
-              <Typography variant="body2" id={item}>
+              <Typography variant="body2" key={item}>
                 {item}
               </Typography>
             ))}
           </Grid>
         ))}
-        <Grid item xs={3} align="left">
+        <Grid item xs={3} align="left" sx={footerDataSx}>
           <Typography variant="h6">Interested?</Typography>
           <Typography variant="body2">Contact me now!</Typography>
         </Grid>
