@@ -24,6 +24,7 @@ const extraFeatures = [
   "Instant status updates",
   "Simple summary",
 ];
+
 const footerRegistration = "MainPage Ltd. • Registered";
 
 const extraFeaturesSx = {
@@ -44,6 +45,17 @@ const extraFeatureTypoSx = {
   fontSize: "0.90em",
 };
 
+const footerContainer = {
+  maxWidth: "1000px",
+  margin: "24px auto",
+};
+
+const footerDataSx = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+};
+
 const Footer = () => {
   return (
     <>
@@ -52,10 +64,7 @@ const Footer = () => {
         columns={{ xs: 3, md: 12 }}
         spacing={6}
         justifyContent="center"
-        sx={{
-          maxWidth: "1000px",
-          margin: "24px auto",
-        }}
+        sx={footerContainer}
       >
         <Grid
           container
@@ -71,7 +80,7 @@ const Footer = () => {
           ))}
         </Grid>
         {footerData.map((data) => (
-          <Grid item xs={3} align="left" id={data.heading}>
+          <Grid item xs={3} align="left" id={data.heading} sx={footerDataSx}>
             <Typography variant="h6">{data.heading}</Typography>
             {data.items.map((item) => (
               <Typography variant="body2" id={item}>
