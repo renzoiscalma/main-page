@@ -31,10 +31,10 @@ const buttonSx = {
     backgroundColor: "#532ee7",
   },
 };
-const Headline = ({ head1, head2, head3, buttonText }) => {
+const Headline = ({ head1, head2, head3, buttonText, innerRef }) => {
   return (
     <>
-      <Grid item xs={12} sx={containerSx} alignItems="center">
+      <Grid item xs={12} sx={containerSx} alignItems="center" ref={innerRef}>
         <Typography variant="h2" sx={headerSx}>
           {head1}
         </Typography>
