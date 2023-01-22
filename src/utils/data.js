@@ -94,6 +94,6 @@ const pricingBannerData = [
   },
 ];
 
-const pageData = ["Product", "Pricing", "Login"];
+const pageData = ["Product", "Pricing"];
 
 export { headlineData, reviewData, featureData, pricingBannerData, pageData };

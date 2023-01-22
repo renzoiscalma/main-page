@@ -25,7 +25,7 @@ const extraFeatures = [
   "Simple summary",
 ];
 
-const footerRegistration = "MainPage Ltd. • Registered";
+const footerCredits = "Images designed by Freepik";
 
 const extraFeatureContainerSx = {
   margin: "0 auto",
@@ -47,6 +47,7 @@ const extraFeaturesSx = {
 
 const extraFeatureTypoSx = {
   fontSize: "0.90em",
+  margin: "auto 0",
 };
 
 const footerContainer = {
@@ -99,11 +100,11 @@ const Footer = () => {
           <Typography variant="h6">Interested?</Typography>
           <Typography variant="body2">Contact me now!</Typography>
         </Grid>
-        {/* <Grid item xs={12} align="left" sx={{ fontStyle: "italic" }}>
+        <Grid item xs={12} align="left" sx={{ fontStyle: "italic" }}>
           <Typography variant="body2" color="grey">
-            {footerRegistration}
+            {footerCredits}
           </Typography>
-        </Grid> */}
+        </Grid>
       </Grid>
     </>
   );

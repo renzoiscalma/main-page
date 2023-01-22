@@ -1,19 +1,19 @@
 import Grid from "@mui/material/Grid";
 import React from "react";
 import {
-  headlineData,
   featureData,
-  reviewData,
+  headlineData,
   pricingBannerData,
+  reviewData,
 } from "../utils/data";
 import Feature from "./Features/Feature";
 import MediumInfo from "./Features/MediumInfo";
-import Reviews from "./Reviews";
 import PaymentInfo from "./Features/PaymentInfo";
 import Headline from "./Headline";
 import PricingBanner from "./PricingBanner";
+import Reviews from "./Reviews";
 
-const Body = () => {
+const Body = ({ headlineRef }) => {
   return (
     <>
       <Grid
@@ -27,7 +27,7 @@ const Body = () => {
           width: "100%",
         }}
       >
-        <Headline {...headlineData} />
+        <Headline {...headlineData} innerRef={headlineRef} />
         <Feature {...featureData[0]}></Feature>
         <Feature {...featureData[1]}>
           <MediumInfo {...featureData[1].subComponentProps}></MediumInfo>
