@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-100.000000, -3696.000000)">
+        <g id="Tick-List" transform="translate(0.000000, 3604.000000)">
+            <g id="Group-3" transform="translate(100.000000, 50.000000)">
+                <g id="Group-4" transform="translate(0.000000, 42.000000)">
+                    <g id="I">
+                        <g id="Tick">
+                            <rect id="Rectangle-2" fill-opacity="0.0700000003" fill="#25CE8B" x="0" y="0" width="26" height="26" rx="4"></rect>
+                            <polyline id="Path-30" stroke="#25CE8B" stroke-width="2" stroke-linecap="round" points="7 13 11 17 19 9"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
