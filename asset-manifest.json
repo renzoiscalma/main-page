@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.80a6b213.js",
-    "static/js/787.4ce70c16.chunk.js": "/static/js/787.4ce70c16.chunk.js",
-    "static/media/AdobeCleanBold.otf": "/static/media/AdobeCleanBold.9eb31c92d2fb20ea46c4.otf",
-    "static/media/reviewer2.jpg": "/static/media/reviewer2.657ba031c99e404d3753.jpg",
-    "static/media/reviewer1.jpg": "/static/media/reviewer1.90f7cf82826bd868d218.jpg",
-    "static/media/image3.webp": "/static/media/image3.22a2ea04b2a2582591f3.webp",
-    "static/media/SofiaProRegular.ttf": "/static/media/SofiaProRegular.703c94a1fd7b1b94369f.ttf",
-    "static/media/image2.webp": "/static/media/image2.5fe467bd2bdba31d590a.webp",
-    "static/media/image1.webp": "/static/media/image1.7988712d9df7bd60dd6e.webp",
-    "static/media/payment.svg": "/static/media/payment.b3556862a05d8f74af6c6b44c53c65d7.svg",
-    "static/media/check-light.svg": "/static/media/check-light.9b9826697fb52e2dd3d56662e70d83a6.svg",
-    "index.html": "/index.html",
-    "main.80a6b213.js.map": "/static/js/main.80a6b213.js.map",
-    "787.4ce70c16.chunk.js.map": "/static/js/787.4ce70c16.chunk.js.map"
+    "main.js": "/main-page/static/js/main.9eebe8cc.js",
+    "static/js/787.4ce70c16.chunk.js": "/main-page/static/js/787.4ce70c16.chunk.js",
+    "static/media/AdobeCleanBold.otf": "/main-page/static/media/AdobeCleanBold.9eb31c92d2fb20ea46c4.otf",
+    "static/media/reviewer2.jpg": "/main-page/static/media/reviewer2.657ba031c99e404d3753.jpg",
+    "static/media/reviewer1.jpg": "/main-page/static/media/reviewer1.90f7cf82826bd868d218.jpg",
+    "static/media/image3.webp": "/main-page/static/media/image3.22a2ea04b2a2582591f3.webp",
+    "static/media/SofiaProRegular.ttf": "/main-page/static/media/SofiaProRegular.703c94a1fd7b1b94369f.ttf",
+    "static/media/image2.webp": "/main-page/static/media/image2.5fe467bd2bdba31d590a.webp",
+    "static/media/image1.webp": "/main-page/static/media/image1.7988712d9df7bd60dd6e.webp",
+    "static/media/payment.svg": "/main-page/static/media/payment.b3556862a05d8f74af6c6b44c53c65d7.svg",
+    "static/media/check-light.svg": "/main-page/static/media/check-light.9b9826697fb52e2dd3d56662e70d83a6.svg",
+    "index.html": "/main-page/index.html",
+    "main.9eebe8cc.js.map": "/main-page/static/js/main.9eebe8cc.js.map",
+    "787.4ce70c16.chunk.js.map": "/main-page/static/js/787.4ce70c16.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.80a6b213.js"
+    "static/js/main.9eebe8cc.js"
   ]
 }
